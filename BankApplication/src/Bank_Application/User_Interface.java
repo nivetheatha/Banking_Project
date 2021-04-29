@@ -23,6 +23,15 @@ public class User_Interface  {
 			DisplayCustomer d=new DisplayCustomer();
 			d.customerdetails(id);
 			break;
+		case 2:
+			System.out.println("Enter your ID ");
+			int iden=in.nextInt();
+			System.out.println("Enter the amount you want to withdraw");
+			int amount=in.nextInt();
+			Withdraw w= new Withdraw();
+			w.withdraw_amount(amount, iden);
+			break;
+			
 		default:
 			System.out.println("Invalid Option");
 			break;
