@@ -12,18 +12,23 @@ public class Login {
         if("Nivethetha".equals(username) && "nivi".equals(password))
         {
             System.out.println("Welcome Nivethetha");
+            
         }
         else if("Rahul".equals(username) && "rahul".equals(password))
         {
             System.out.println("Welcome Rahul");
+           
         }
         else if("Tanu".equals(username) && "tanu".equals(password))
         {
             System.out.println("Welcome Tanu");
+           
         }
         else
         {
             System.out.println("Invalid username or password");
+            System.exit(0);
+            
         }
 
     }
