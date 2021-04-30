@@ -13,9 +13,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Deposit {
     public void Deposit_amount(int a, int id) throws IOException {
-        String excelfile = ".\\Data Files\\Customer_Details.xlsx";
-        FileInputStream inputstream = new FileInputStream(excelfile);
-        XSSFWorkbook workbook = new XSSFWorkbook(inputstream);
+        String excelfile = ".\\DataFiles\\Customer_Details.xlsx";
+        FileInputStream inputstream1 = new FileInputStream(excelfile);
+        XSSFWorkbook workbook = new XSSFWorkbook(inputstream1);
         XSSFSheet customer_sheet = workbook.getSheetAt(0);
         int rows = customer_sheet.getLastRowNum();
         int cols = customer_sheet.getRow(1).getLastCellNum();
